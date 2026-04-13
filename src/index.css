@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* react-calendar overrides */
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  background: transparent !important;
+  font-family: inherit !important;
+}
+
+.react-calendar__tile--active {
+  background: #f97316 !important;
+  border-radius: 0.5rem !important;
+}
+
+.react-calendar__tile--now {
+  background: #fed7aa !important;
+  border-radius: 0.5rem !important;
+}
+
+.react-calendar__tile:hover {
+  background: #ffedd5 !important;
+  border-radius: 0.5rem !important;
+}
+
+.has-recipe {
+  background: #fef3c7 !important;
+  border-radius: 0.5rem !important;
+  font-weight: bold;
+}
