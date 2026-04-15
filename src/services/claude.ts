@@ -143,7 +143,7 @@ export async function suggestRecipes(
 
   const response = await client.messages.create({
     model: 'claude-sonnet-4-6',
-    max_tokens: 4096,
+    max_tokens: 8096,
     messages: [
       {
         role: 'user',
@@ -166,8 +166,13 @@ ${context}
     ],
   });
 
-  const text = response.content[0].type === 'text' ? response.content[0].text : '[]';
+ const text = response.content[0].type === 'text' ? response.content[0].text : '[]';
   const jsonMatch = text.match(/\[[\s\S]*\]/);
   if (!jsonMatch) throw new Error('レシピ提案の取得に失敗しました');
-  return JSON.parse(jsonMatch[0]);
+  try {
+    return JSON.parse(jsonMatch[0]);
+  } catch {
+    const fixedJson = jsonMatch[0].replace(/,\s*$/, '').replace(/,\s*\]$/, ']');
+    return JSON.parse(fixedJson);
+  }
 }
