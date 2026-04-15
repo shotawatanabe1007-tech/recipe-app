@@ -27,9 +27,18 @@ export default function RecipeCard({ recipe, showDate = false }: Props) {
       )}
       <div className="flex-1 min-w-0">
         <h3 className="font-semibold text-gray-800 truncate">{recipe.title}</h3>
-        <p className="text-xs text-gray-400 mt-0.5">
+       <p className="text-xs text-gray-400 mt-0.5">
           食材 {recipe.ingredients.length}品目 / 手順 {recipe.steps.filter(Boolean).length}ステップ
         </p>
+      {recipe.ingredients.length > 0 && (
+          <div className="flex flex-wrap gap-1 mt-1">
+            {recipe.ingredients.map((ing, i) => (
+              <span key={i} className="text-xs bg-orange-50 text-orange-600 px-2 py-0.5 rounded-full">
+                {ing.name} {ing.amount}
+              </span>
+            ))}
+          </div>
+        )}
         {showDate && recipe.scheduledDate && (
           <p className="text-xs text-orange-500 mt-1 font-medium">
             📅 {recipe.scheduledDate}
@@ -40,7 +49,3 @@ export default function RecipeCard({ recipe, showDate = false }: Props) {
             📅 {recipe.scheduledDate} 予定
           </p>
         )}
-      </div>
-    </div>
-  );
-}
