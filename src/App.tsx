@@ -9,12 +9,14 @@ import CalendarPage from './pages/CalendarPage';
 import CookingHistory from './pages/CookingHistory';
 import AISuggestions from './pages/AISuggestions';
 import ShoppingList from './pages/ShoppingList';
+import EmailPreview from './pages/EmailPreview';
 
 export default function App() {
   return (
     <BrowserRouter>
       <AppProvider>
         <Routes>
+          <Route path="/email-preview" element={<EmailPreview />} />
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/plan" element={<PlanList />} />
