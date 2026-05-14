@@ -1,0 +1,94 @@
+<svg width="520" height="150" viewBox="0 0 520 150" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="150" fill="#fffbeb" rx="8"/>
+
+  <!-- Left: Outdoor location (building + location pin) -->
+  <g transform="translate(46,80)">
+    <!-- building -->
+    <rect x="-22" y="-36" width="44" height="36" fill="none" stroke="#fbbf24" stroke-width="1.8"/>
+    <rect x="-28" y="0" width="56" height="5" rx="1" fill="#fde68a"/>
+    <!-- windows row 1 -->
+    <rect x="-16" y="-30" width="10" height="10" rx="1" fill="#fde68a"/>
+    <rect x="4" y="-30" width="10" height="10" rx="1" fill="#fde68a"/>
+    <!-- windows row 2 -->
+    <rect x="-16" y="-14" width="10" height="10" rx="1" fill="rgba(253,230,138,0.5)"/>
+    <rect x="4" y="-14" width="10" height="10" rx="1" fill="rgba(253,230,138,0.5)"/>
+    <!-- door -->
+    <rect x="-5" y="-10" width="10" height="10" rx="1" fill="rgba(217,119,6,0.4)"/>
+    <!-- Location pin -->
+    <circle cx="0" cy="-54" r="10" fill="#d97706"/>
+    <polygon points="-6,-48 6,-48 0,-36" fill="#d97706"/>
+    <circle cx="0" cy="-54" r="4" fill="white"/>
+    <text x="0" y="20" text-anchor="middle" fill="#b45309" font-size="9" font-weight="bold" font-family="Arial,sans-serif">場所を選ばず</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M84,75 Q95,68 105,75" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <polygon points="103,71 111,75 103,79" fill="#d97706"/>
+
+  <!-- Center: SIM Camera -->
+  <g transform="translate(152,74)">
+    <!-- camera body -->
+    <rect x="-30" y="-18" width="48" height="32" rx="5" fill="white" stroke="#f59e0b" stroke-width="2.2"/>
+    <!-- lens outer ring -->
+    <circle cx="-6" cy="-2" r="13" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <!-- lens layers -->
+    <circle cx="-6" cy="-2" r="9" fill="#fffbeb" stroke="#fbbf24" stroke-width="1.2"/>
+    <circle cx="-6" cy="-2" r="5" fill="rgba(245,158,11,0.25)"/>
+    <circle cx="-6" cy="-2" r="2" fill="rgba(245,158,11,0.6)"/>
+    <!-- lens hood (front) -->
+    <polygon points="18,-14 32,-22 32,18 18,10" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <!-- SIM chip on top -->
+    <rect x="-8" y="-32" width="28" height="16" rx="3" fill="#d97706"/>
+    <rect x="-4" y="-29" width="10" height="8" rx="1" fill="rgba(255,255,255,0.5)"/>
+    <text x="10" y="-21" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="Arial,sans-serif">SIM</text>
+    <!-- signal waves left of camera -->
+    <path d="-42,0 Q-38,-5 -34,0" fill="none" stroke="rgba(245,158,11,0.7)" stroke-width="2"/>
+    <path d="-46,0 Q-40,-8 -34,0" fill="none" stroke="rgba(245,158,11,0.4)" stroke-width="1.5"/>
+    <text x="-40" y="22" text-anchor="middle" fill="#b45309" font-size="8" font-weight="bold" font-family="Arial,sans-serif">Wi-Fi不要</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M196,75 Q207,68 217,75" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <polygon points="215,71 223,75 215,79" fill="#d97706"/>
+
+  <!-- Right: Smartphone live view -->
+  <g transform="translate(252,76)">
+    <!-- phone body -->
+    <rect x="-18" y="-40" width="36" height="62" rx="6" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <!-- screen -->
+    <rect x="-12" y="-32" width="24" height="42" rx="2" fill="#1a1a2e"/>
+    <!-- camera feed grid -->
+    <rect x="-10" y="-30" width="20" height="12" rx="1" fill="#2d2d44"/>
+    <line x1="-10" y1="-24" x2="10" y2="-24" stroke="rgba(251,191,36,0.2)" stroke-width="0.5"/>
+    <rect x="-10" y="-16" width="20" height="10" rx="1" fill="#252535"/>
+    <rect x="-10" y="-4" width="9" height="10" rx="1" fill="#2d2d44"/>
+    <rect x="1" y="-4" width="9" height="10" rx="1" fill="#252535"/>
+    <!-- LIVE badge -->
+    <rect x="-8" y="-28" width="16" height="8" rx="4" fill="#ef4444"/>
+    <circle cx="-3" cy="-24" r="1.5" fill="white"/>
+    <text x="3" y="-21" fill="white" font-size="6" font-weight="bold" font-family="Arial,sans-serif">LIVE</text>
+    <!-- home button -->
+    <circle cy="18" r="3.5" fill="#fde68a"/>
+    <text x="0" y="36" text-anchor="middle" fill="#b45309" font-size="9" font-weight="bold" font-family="Arial,sans-serif">リアルタイム確認</text>
+  </g>
+
+  <!-- Vertical divider -->
+  <line x1="310" y1="15" x2="310" y2="135" stroke="#fde68a" stroke-width="1.5"/>
+
+  <!-- Features list -->
+  <text x="328" y="40" fill="#78350f" font-size="16" font-weight="bold" font-family="Arial,sans-serif">SIM防犯カメラ</text>
+  <text x="328" y="64" fill="#374151" font-size="13" font-family="Arial,sans-serif">✓ Wi-Fi環境が一切不要</text>
+  <text x="328" y="84" fill="#374151" font-size="13" font-family="Arial,sans-serif">✓ 屋外・無人店舗・倉庫対応</text>
+  <text x="328" y="104" fill="#374151" font-size="13" font-family="Arial,sans-serif">✓ クラウド録画・遠隔操作</text>
+  <text x="328" y="124" fill="#374151" font-size="13" font-family="Arial,sans-serif">✓ 最短翌日設置完了</text>
+
+  <!-- Vertical divider 2 -->
+  <line x1="485" y1="15" x2="485" y2="135" stroke="#fde68a" stroke-width="1.5"/>
+
+  <!-- Price block -->
+  <text x="505" y="50" text-anchor="middle" fill="#6b7280" font-size="12" font-family="Arial,sans-serif">月額</text>
+  <text x="505" y="82" text-anchor="middle" fill="#b45309" font-size="28" font-weight="bold" font-family="Arial,sans-serif">¥2,480</text>
+  <text x="505" y="98" text-anchor="middle" fill="#6b7280" font-size="11" font-family="Arial,sans-serif">〜（税抜）</text>
+  <rect x="468" y="108" width="74" height="24" rx="12" fill="#d97706"/>
+  <text x="505" y="125" text-anchor="middle" fill="white" font-size="11" font-weight="bold" font-family="Arial,sans-serif">翌日設置 可</text>
+</svg>

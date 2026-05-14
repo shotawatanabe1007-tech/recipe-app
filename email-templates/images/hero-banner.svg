@@ -1,0 +1,90 @@
+<svg width="560" height="170" viewBox="0 0 560 170" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0f2a5c"/>
+      <stop offset="60%" stop-color="#1a3a6b"/>
+      <stop offset="100%" stop-color="#1e4d9b"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="170" fill="url(#bgGrad)" rx="10"/>
+  <!-- Decorative circles -->
+  <circle cx="520" cy="20" r="100" fill="rgba(96,165,250,0.05)"/>
+  <circle cx="40" cy="160" r="80" fill="rgba(96,165,250,0.04)"/>
+  <circle cx="280" cy="-30" r="70" fill="rgba(255,255,255,0.03)"/>
+
+  <!-- Left: Headline -->
+  <text x="32" y="48" fill="#93c5fd" font-size="12" font-family="Arial,sans-serif" font-weight="bold" letter-spacing="2">LAW CORPORATION SOLUTION</text>
+  <text x="30" y="82" fill="#ffffff" font-size="22" font-family="Arial,sans-serif" font-weight="bold">業務効率とセキュリティを</text>
+  <text x="30" y="112" fill="#ffffff" font-size="22" font-family="Arial,sans-serif" font-weight="bold">まとめてアップグレード</text>
+  <!-- Badge -->
+  <rect x="30" y="125" width="170" height="28" rx="14" fill="url(#badgeGrad)"/>
+  <text x="115" y="144" text-anchor="middle" fill="#1a1a1a" font-size="12" font-weight="bold" font-family="Arial,sans-serif">▶ セット割で最大15%OFF</text>
+
+  <!-- Divider vertical -->
+  <line x1="240" y1="20" x2="240" y2="150" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+
+  <!-- Right: 3 service icons -->
+  <!-- MOBILE icon -->
+  <g transform="translate(288,85)">
+    <circle r="38" fill="rgba(59,130,246,0.18)"/>
+    <circle r="38" fill="none" stroke="rgba(147,197,253,0.3)" stroke-width="1"/>
+    <!-- phone body -->
+    <rect x="-13" y="-24" width="26" height="44" rx="4" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+    <circle cy="15" r="3" fill="#7dd3fc"/>
+    <!-- screen -->
+    <rect x="-8" y="-18" width="16" height="24" rx="1" fill="rgba(147,197,253,0.15)"/>
+    <!-- signal bars -->
+    <rect x="-4" y="2" width="4" height="-8" rx="1" fill="#3b82f6"/>
+    <rect x="2" y="2" width="4" height="-14" rx="1" fill="#60a5fa"/>
+    <rect x="8" y="2" width="4" height="-20" rx="1" fill="#93c5fd"/>
+    <!-- cost label -->
+    <rect x="-18" y="-36" width="36" height="14" rx="7" fill="#fbbf24"/>
+    <text y="-26" text-anchor="middle" fill="#1a1a1a" font-size="8" font-weight="bold" font-family="Arial,sans-serif">最大40%削減</text>
+  </g>
+  <text x="288" y="143" text-anchor="middle" fill="#93c5fd" font-size="11" font-family="Arial,sans-serif" font-weight="bold">法人モバイル</text>
+
+  <!-- PBX icon -->
+  <g transform="translate(400,85)">
+    <circle r="38" fill="rgba(34,197,94,0.15)"/>
+    <circle r="38" fill="none" stroke="rgba(134,239,172,0.3)" stroke-width="1"/>
+    <!-- cloud shape -->
+    <path d="M-20,10 Q-22,-4 -10,-6 Q-6,-18 6,-14 Q16,-16 20,-8 Q26,-8 26,0 Q26,8 18,8 L-20,8 Q-26,8 -26,2 Q-26,-4 -20,10Z" fill="none" stroke="#4ade80" stroke-width="2" stroke-linejoin="round"/>
+    <!-- legs from cloud -->
+    <line x1="-10" y1="8" x2="-10" y2="18" stroke="#4ade80" stroke-width="2"/>
+    <line x1="2" y1="8" x2="2" y2="18" stroke="#4ade80" stroke-width="2"/>
+    <line x1="14" y1="8" x2="14" y2="18" stroke="#4ade80" stroke-width="2"/>
+    <line x1="-16" y1="18" x2="20" y2="18" stroke="#4ade80" stroke-width="2"/>
+    <!-- wifi -->
+    <path d="M-8,-22 Q2,-28 12,-22" fill="none" stroke="#86efac" stroke-width="1.8"/>
+    <path d="M-4,-18 Q2,-22 8,-18" fill="none" stroke="#86efac" stroke-width="1.5"/>
+    <circle cx="2" cy="-14" r="2" fill="#4ade80"/>
+  </g>
+  <text x="400" y="143" text-anchor="middle" fill="#86efac" font-size="11" font-family="Arial,sans-serif" font-weight="bold">クラウドPBX</text>
+
+  <!-- CAMERA icon -->
+  <g transform="translate(512,85)">
+    <circle r="38" fill="rgba(245,158,11,0.15)"/>
+    <circle r="38" fill="none" stroke="rgba(252,211,77,0.3)" stroke-width="1"/>
+    <!-- camera body -->
+    <rect x="-20" y="-12" width="34" height="24" rx="4" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <!-- lens -->
+    <circle cx="-3" cy="0" r="9" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <circle cx="-3" cy="0" r="5" fill="rgba(251,191,36,0.25)"/>
+    <circle cx="-3" cy="0" r="2" fill="rgba(251,191,36,0.5)"/>
+    <!-- lens hood -->
+    <polygon points="14,-9 26,-16 26,16 14,9" fill="none" stroke="#fbbf24" stroke-width="1.8"/>
+    <!-- SIM badge on top -->
+    <rect x="-4" y="-26" width="24" height="14" rx="3" fill="#d97706"/>
+    <rect x="-1" y="-23" width="8" height="7" rx="1" fill="rgba(255,255,255,0.6)"/>
+    <text x="13" y="-15" text-anchor="middle" fill="white" font-size="8" font-weight="bold" font-family="Arial,sans-serif">SIM</text>
+    <!-- signal wave -->
+    <path d="-28,0 Q-24,-4 -20,0" fill="none" stroke="rgba(251,191,36,0.6)" stroke-width="1.5" transform="translate(0,0)"/>
+  </g>
+  <text x="512" y="143" text-anchor="middle" fill="#fcd34d" font-size="11" font-family="Arial,sans-serif" font-weight="bold">SIM防犯カメラ</text>
+</svg>
